@@ -1,0 +1,13 @@
+# Fictional examples only. Copy to ignored terraform.tfvars for a NEW environment.
+# Do not overwrite an existing operational terraform.tfvars.
+aws_region        = "ap-south-1"
+admin_cidr        = "192.0.2.10/32" # Documentation address; replace with your admin CIDR
+route53_zone_name = "example.com"
+rancher_subdomain = "rancher-k8s"
+ssh_key_name      = "portfolio-lab-key"
+letsencrypt_email = "platform@example.com"
+
+# Versions preserved from the tested baseline
+rke2_version          = "v1.35.7+rke2r1"
+cert_manager_version  = "v1.21.1"
+rancher_chart_version = "2.14.3"
